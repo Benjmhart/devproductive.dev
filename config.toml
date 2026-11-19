@@ -1,0 +1,8 @@
+base_url = "https://bhart.dev"
+title = "Ben Hart"
+description = "Ben Hart's notes and open source work."
+compile_sass = false
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+

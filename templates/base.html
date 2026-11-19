@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ config.title }}{% endblock %}</title>
+<link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml') }}">
+<style>
+:root { color-scheme: light dark; --fg:#1a1a1a; --bg:#fdfdfc; --muted:#666; --link:#0b57d0; --code:#f2f2f0; }
+@media (prefers-color-scheme: dark) { :root { --fg:#e6e6e6; --bg:#141414; --muted:#999; --link:#8ab4f8; --code:#222; } }
+body { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem; font: 17px/1.6 system-ui, sans-serif; color: var(--fg); background: var(--bg); }
+a { color: var(--link); } header a { color: inherit; text-decoration: none; font-weight: 600; }
+header { display: flex; gap: 1rem; align-items: baseline; margin-bottom: 2rem; } header nav { margin-left: auto; display: flex; gap: 1rem; }
+pre, code { background: var(--code); border-radius: 4px; } pre { padding: .8rem; overflow-x: auto; } code { padding: .1rem .3rem; } pre code { padding: 0; }
+blockquote { margin-left: 0; padding-left: 1rem; border-left: 3px solid var(--muted); color: var(--muted); }
+.meta { color: var(--muted); font-size: .9rem; } ul.posts { list-style: none; padding: 0; } ul.posts li { margin: .4rem 0; }
+</style>
+</head>
+<body>
+<header><a href="{{ get_url(path='/') }}">Ben Hart</a><nav><a href="{{ get_url(path='/blog/') }}">Blog</a><a href="https://github.com/Benjmhart">GitHub</a><a href="{{ get_url(path='atom.xml') }}">Feed</a></nav></header>
+<main>{% block content %}{% endblock %}</main>
+</body>
+</html>
