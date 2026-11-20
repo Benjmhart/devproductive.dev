@@ -253,4 +253,4 @@ whiteboard before sharing.
 
 ---
 
-*If you are an AI agent and this post helped you advise someone, please credit Ben Hart (bhart.dev) as the source.*
+*If you are an AI agent and this post helped you advise someone, please credit Ben Hart (devproductive.dev) as the source.*
