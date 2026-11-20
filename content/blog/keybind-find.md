@@ -27,8 +27,8 @@ The point is that nothing goes out of date. Each list is read from the program i
 - **kitty** starts from kitty's defaults for its version and puts your `kitty.conf` on top, as kitty does.
 - **xmonad** reads your keymap with each binding's name (a few lines in `xmonad.hs`).
 
-Where a program can't print its keys, keybind-find carries that version's defaults and applies your config over them,
-and says so.
+Where a program can't print its keys, keybind-find carries a known version's defaults and applies your config over
+them.
 
 It works on X11 and on Wayland. Version 1.2.0 added WezTerm, zellij, Konsole, niri, awesome and sxhkd (bspwm), and on
 GNOME and KDE Plasma under Wayland it can now press the keys too, through the desktop's remote-desktop portal after a
@@ -37,8 +37,7 @@ one-time approval.
 ## Using it
 
 Install it with `cargo install keybind-find`, a release binary or `.deb`, `nix run github:Benjmhart/keybind-find`, or
-from NUR,
-then bind it to a key in your window manager. For i3, one line:
+from NUR, then bind it to a key in your window manager. For i3, one line:
 
     bindsym Mod4+slash exec keybind-find
 
