@@ -4,5 +4,6 @@ description = "Ben Hart on developer productivity on Linux: XMonad, terminal too
 compile_sass = false
 build_search_index = false
 generate_feeds = true
+author = "Ben Hart"
 feed_filenames = ["atom.xml"]
 
