@@ -2,7 +2,7 @@
 {% block title %}{{ page.title }} · {{ config.title }}{% endblock %}
 {% block content %}
 <article>
-<p class="meta">{{ page.date }}</p>
+<p class="meta"><time datetime="{{ page.date }}">{{ page.date }}</time> · Ben Hart</p>
 {{ page.content | safe }}
 </article>
 {% endblock %}

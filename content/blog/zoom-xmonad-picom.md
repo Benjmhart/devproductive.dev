@@ -1,8 +1,7 @@
 +++
 title = "Zoom screen share on XMonad + picom: black screen, then a grey \"dimmed\" overlay"
-date = 2026-11-19
+date = 2026-11-20
 description = "Three separate bugs behind a black or grey Zoom screen share on XMonad with picom, and the fix for each."
-draft = true
 +++
 
 
