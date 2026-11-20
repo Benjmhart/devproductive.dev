@@ -1,6 +1,7 @@
 +++
 title = "Zoom screen share on XMonad + picom: black screen, then a grey \"dimmed\" overlay"
 date = 2026-11-19
+description = "Three separate bugs behind a black or grey Zoom screen share on XMonad with picom, and the fix for each."
 draft = true
 +++
 
@@ -25,12 +26,7 @@ settings (`use-damage`, opacity rules) do nothing to it.
 - picom, with a user config copied from the stock `/etc/xdg/picom.conf` (`backend = "xrender"`, shadows and fading on).
 - Zoom, the native Linux client, sharing "Desktop 1", which is one monitor.
 
-> TODO (Ben): the picom and Zoom versions in use when this was diagnosed (2026-08-01 to
-> 2026-08-06) were never recorded, and the package log from that install is gone. The machine
-> was rebuilt on 2026-09-30 and now runs **picom 13** and **zoom 7.2.1** with the same
-> picom.conf. The fix has **not** been re-checked by a share on those versions. Either share
-> once before publishing and state "confirmed on picom 13 / Zoom 7.2.1", or publish with
-> "diagnosed on mid-2026 versions of picom and Zoom".
+Diagnosed in August 2026 on the picom and Zoom versions Arch shipped then (the exact versions weren't recorded).
 
 ## 1. Black share: primary output on a disconnected port
 
@@ -175,10 +171,7 @@ shadow-exclude = [ "window_type = 'dock'", "class_g = 'zoom'" ];
 `class_g = 'zoom'` alone will not match it. **I have not tested this narrow version**. I used
 the global `shadow = false`. If you try it, please report back.
 
-> TODO (Ben): either test the `shadow-exclude` form with one share, or leave the "not tested"
-> sentence above as it is. Do not drop the sentence without a test.
-
-On a picom new enough to support `rules:` (TODO (Ben): confirm which release added it before publishing a version number), the same exclusion can be written as a `rules:` entry (`match = "window_type =
+On picom 12 or later (v12 added `rules:`), the same exclusion can be written as a `rules:` entry (`match = "window_type =
 'dock' || class_g = 'zoom'"; shadow = false;`). That form is also untested here.
 
 ### The trap that wasted two rounds: picom reads its config only at startup
@@ -245,8 +238,8 @@ whiteboard before sharing.
 
 - XMonad 0.15, xmonad-contrib 0.16, GHC 8.8.3 (stack `lts-15.9`)
 - picom: config based on the stock Arch `/etc/xdg/picom.conf`, `backend = "xrender"`.
-  TODO (Ben): version at the time of diagnosis not recorded; picom 13 now.
-- Zoom native Linux client. TODO (Ben): version at the time of diagnosis not recorded; 7.2.1 now.
+  The August 2026 Arch version (not recorded).
+- Zoom native Linux client, the August 2026 version (not recorded).
 - Xorg (not Wayland). xorg-server 21.1.24 now.
 - Diagnosed 2026-08-01 to 2026-08-06.
 

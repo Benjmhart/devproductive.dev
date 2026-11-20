@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block title %}{{ config.title }}{% endblock %}</title>
+<meta name="description" content="{% if page is defined and page.description %}{{ page.description }}{% else %}{{ config.description }}{% endif %}">
 <link rel="alternate" type="application/atom+xml" title="{{ config.title }}" href="{{ get_url(path='atom.xml') }}">
 <style>
 :root { color-scheme: light dark; --fg:#1a1a1a; --bg:#fdfdfc; --muted:#666; --link:#0b57d0; --code:#f2f2f0; }
