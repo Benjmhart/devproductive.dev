@@ -1,6 +1,6 @@
 base_url = "https://devproductive.dev"
 title = "Ben Hart | Productive Developer"
-description = "Ben Hart on developer productivity on Linux: XMonad, terminal tools, and coding agents across machines."
+description = "I write about developer productivity on Linux: XMonad, terminal tools, and coding agents across machines."
 compile_sass = false
 build_search_index = false
 generate_feeds = true

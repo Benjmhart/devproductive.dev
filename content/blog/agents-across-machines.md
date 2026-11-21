@@ -1,8 +1,7 @@
 +++
 title = "Running coding agents on several machines with herdr"
-date = 2026-11-22
+date = 2026-11-21
 description = "Three herdr plugins I wrote to keep track of agents across machines: which ones are waiting on me, how to get back where I was, and which machine a row is on."
-draft = true
 +++
 
 I run coding agents on several machines at once, in [herdr](https://herdr.dev), a terminal multiplexer built for
@@ -10,7 +9,7 @@ them. One herdr window on my desk reaches every machine (`herdr machine list`), 
 trouble came with numbers: with agents spread across machines, I kept missing the ones that had stopped to ask me
 something.
 
-So I wrote three plugins.
+So I wrote three plugins. (herdr-queues is also up in herdr's [Show and tell](https://github.com/herdrdev/herdr/discussions/6127).)
 
 ## herdr-queues: who is waiting on me
 
