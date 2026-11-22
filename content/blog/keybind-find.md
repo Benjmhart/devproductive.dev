@@ -14,7 +14,7 @@ list of the shortcuts that work right where you are: your window manager's, and 
 (nvim, tmux, kitty, helix, mpv, your browser: more than 40 programs). Type to search the list. Pick a shortcut and
 keybind-find presses those keys for you, so you also learn the key for next time.
 
-![keybind-find over nvim: the list narrows as you type, Enter sends the keys](https://github.com/Benjmhart/keybind-find/raw/main/docs/media/demo.gif)
+![keybind-find over nvim: Super+/ opens the list, typing "light" puts Toggle light theme (Space u l) on top, and Enter sends the keys: the editor turns from dark to light](https://raw.githubusercontent.com/Benjmhart/keybind-find/a88c250/docs/media/demo.gif)
 
 ## It reads your real settings
 
@@ -28,8 +28,9 @@ the way that program does, including the shortcuts you changed yourself. Some pr
 
 For programs that can't be asked, keybind-find knows their standard shortcuts and adds your changes on top.
 
-It works on X11 and on Wayland. Version 1.2.0 added WezTerm, zellij, Konsole, niri, awesome and sxhkd (bspwm). On
-GNOME and KDE under Wayland it can now press the keys for you too, once you allow it the first time.
+It works on X11 and on Wayland. Version 1.2.0 added WezTerm, zellij, Konsole, niri, awesome and sxhkd (bspwm), and on
+GNOME and KDE under Wayland it can now press the keys for you too, once you allow it the first time. Version 1.3.0 adds
+lazygit, qutebrowser, lf, nnn, Kakoune and Openbox.
 
 ## Try it
 
