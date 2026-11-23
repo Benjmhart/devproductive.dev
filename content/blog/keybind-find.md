@@ -38,8 +38,8 @@ lazygit, qutebrowser, lf, nnn, Kakoune, Openbox, GIMP, Inkscape and LibreOffice.
 
 ## Try it
 
-Get a ready-made binary or `.deb` from the [1.4.0 release](https://github.com/Benjmhart/keybind-find/releases/tag/v1.4.0),
-or use Nix (`nix run github:Benjmhart/keybind-find/v1.4.0`, or NUR). Then set a key in your window manager to run it. For i3, that's one
+Install it with `cargo install --locked keybind-find`, or get a ready-made binary or `.deb` from the
+[1.4.0 release](https://github.com/Benjmhart/keybind-find/releases/tag/v1.4.0), or use Nix (`nix run github:Benjmhart/keybind-find/v1.4.0`, or NUR). Then set a key in your window manager to run it. For i3, that's one
 line:
 
     bindsym Mod4+slash exec keybind-find
