@@ -28,11 +28,13 @@ the way that program does, including the shortcuts you changed yourself. Some pr
 - **kitty** gets its standard keys for your version, with your own changes on top.
 - **xmonad** lists your own keys with their names (it needs a few lines in your config).
 
-For programs that can't be asked, keybind-find knows their standard shortcuts and adds your changes on top.
+For programs that can't be asked, keybind-find knows their standard shortcuts and adds your changes on top. When it
+lists a program's built-in shortcuts, the top of the list says which version they come from, and whether that's the
+version you have installed.
 
 It works on X11 and on Wayland. Version 1.2.0 added WezTerm, zellij, Konsole, niri, awesome and sxhkd (bspwm), and on
-GNOME and KDE under Wayland it can now press the keys for you too, once you allow it the first time. Version 1.3.0 adds
-lazygit, qutebrowser, lf, nnn, Kakoune and Openbox.
+GNOME and KDE under Wayland it can now press the keys for you too, once you allow it the first time. Version 1.4.0 adds
+lazygit, qutebrowser, lf, nnn, Kakoune, Openbox, GIMP, Inkscape and LibreOffice.
 
 ## Try it
 
