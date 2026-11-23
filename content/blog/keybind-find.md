@@ -1,6 +1,6 @@
 +++
 title = "keybind-find: a command palette for your whole desktop"
-date = 2026-11-21
+date = 2026-11-22
 description = "One hotkey searches everything you can do where you are, in the window manager and the app you're in, and does it for you by pressing its keys."
 draft = true
 +++
@@ -38,8 +38,8 @@ lazygit, qutebrowser, lf, nnn, Kakoune, Openbox, GIMP, Inkscape and LibreOffice.
 
 ## Try it
 
-Install it with `cargo install keybind-find`, or get a ready-made binary or `.deb` from the releases page, or use Nix
-(`nix run github:Benjmhart/keybind-find`, or NUR). Then set a key in your window manager to run it. For i3, that's one
+Get a ready-made binary or `.deb` from the [1.4.0 release](https://github.com/Benjmhart/keybind-find/releases/tag/v1.4.0),
+or use Nix (`nix run github:Benjmhart/keybind-find/v1.4.0`, or NUR). Then set a key in your window manager to run it. For i3, that's one
 line:
 
     bindsym Mod4+slash exec keybind-find
