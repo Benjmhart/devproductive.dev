@@ -1,8 +1,8 @@
 +++
 title = "keybind-find: a command palette for your whole desktop"
-date = 2026-11-22
+date = 2026-11-23
 description = "One hotkey searches everything you can do where you are, in the window manager and the app you're in, and does it for you by pressing its keys."
-draft = true
+draft = false
 +++
 
 VS Code has a command palette: one key, type what you want, press Enter. My desktop doesn't. Everything I can do in
