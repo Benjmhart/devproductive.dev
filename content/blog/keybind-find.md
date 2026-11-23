@@ -1,18 +1,20 @@
 +++
-title = "keybind-find: the shortcuts for the window you're in, from one hotkey"
+title = "keybind-find: a command palette for your whole desktop"
 date = 2026-11-21
-description = "Why I wrote a tool that lists the keyboard shortcuts that work right now, read from the real configs, and presses them for you."
+description = "One hotkey searches everything you can do where you are, in the window manager and the app you're in, and does it for you by pressing its keys."
 draft = true
 +++
 
-I kept forgetting my own keyboard shortcuts. Not the ones I use every hour, but the ones I set up once and then never
-remembered: a window split I need twice a month, a window manager command I wrote and never pressed again. Cheat
-sheets didn't help, because mine were always out of date.
+VS Code has a command palette: one key, type what you want, press Enter. My desktop doesn't. Everything I can do in
+it is spread over the window manager, nvim, tmux, the terminal and my text snippets, and the only way in is a
+keyboard shortcut I have to remember. I kept forgetting them: not the ones I use every hour, but the window split I
+need twice a month, or the window manager command I set up once and never pressed again.
 
-So I wrote [keybind-find](https://github.com/Benjmhart/keybind-find). You press one hotkey (I use `Super+/`) and get a
-list of the shortcuts that work right where you are: your window manager's, and the ones for the program you're in
-(nvim, tmux, kitty, helix, mpv, your browser: more than 40 programs). Type to search the list. Pick a shortcut and
-keybind-find presses those keys for you, so you also learn the key for next time.
+So I wrote [keybind-find](https://github.com/Benjmhart/keybind-find), a command palette for the whole desktop. You press
+one hotkey (I use `Super+/`) and get a searchable list of everything you can do right where you are: your window
+manager's commands, the ones for the program you're in (nvim, tmux, kitty, helix, mpv, your browser: more than 40
+programs), and your espanso snippets. Search by name or by key. Pick one and keybind-find does it by pressing its keys
+for you, and it shows you the key, so next time you can press it yourself.
 
 ![keybind-find over nvim: Super+/ opens the list, typing "light" puts Toggle light theme (Space u l) on top, and Enter sends the keys: the editor turns from dark to light](https://raw.githubusercontent.com/Benjmhart/keybind-find/a88c250/docs/media/demo.gif)
 
